@@ -1,0 +1,5 @@
+TerminalPrefInvertColors=true
+ask.before.rebuild=prompt
+eclipse.preferences.version=1
+overriddenByCSS=,TerminalPrefInvertColors,
+warn.before.losing.filesets=true

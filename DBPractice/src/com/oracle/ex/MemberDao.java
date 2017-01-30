@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Hashtable;
 import java.util.List;
 
 import javax.naming.Context;
@@ -24,7 +23,7 @@ public class MemberDao {
 	
 	public MemberDao() {
 		try {
-			// 오라클 드라이버 로드
+			// �삤�씪�겢 �뱶�씪�씠踰� 濡쒕뱶
 //			Class.forName("oracle.jdbc.driver.OracleDriver");
 			Context context = new InitialContext();
 			dataSource = (DataSource) context.lookup("java:comp/env/jdbc/Oracle11g");
@@ -36,7 +35,7 @@ public class MemberDao {
 	}
 	
 	/*
-	 * 모든 멤버 가져오기
+	 * 紐⑤뱺 硫ㅻ쾭 媛��졇�삤湲�
 	 */
 	public List<MemberVo> getMemberAll(){
 		List<MemberVo> list = new ArrayList<>();
@@ -62,7 +61,7 @@ public class MemberDao {
 	}
 	
 	/*
-	 * 회원 추가하기
+	 * �쉶�썝 異붽��븯湲�
 	 */
 	public void insertMember(String id, String pw, String name, String phone){
 		
